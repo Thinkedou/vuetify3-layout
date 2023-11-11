@@ -24,8 +24,8 @@
         grow
       >
         <v-btn>
-          <v-icon>mdi-history</v-icon>
-          Recents
+          <v-icon>mdi-home</v-icon>
+          Home
         </v-btn>
 
         <v-btn>
