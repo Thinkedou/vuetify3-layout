@@ -26,6 +26,11 @@ const routes = [
         name: 'adminPage1',
         component: () => import('@/views/AdminContent.vue'),
       },
+      {
+        path: 'answer', // et là nous sommes bien sur :3000/admin/create-example
+        name: 'answer',
+        component: () => import('@/views/DynAnswer.vue'),
+      },
     ],
   },
 ]
