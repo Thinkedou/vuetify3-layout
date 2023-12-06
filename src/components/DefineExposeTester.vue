@@ -16,15 +16,14 @@ defineExpose({firstName})
         <v-card
             title="Test defineExpose()"
         >
-            <v-card-text>
-                <div >
+            <v-card-text >
+                <div class="d-flex">
 
                     <v-text-field 
                             variant="underlined"
                             density="compact" 
                             hide-details
                             v-model="firstName"
-                            height="120"
                         >
                     </v-text-field>
 

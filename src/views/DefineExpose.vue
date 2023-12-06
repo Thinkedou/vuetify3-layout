@@ -4,8 +4,11 @@ import DefineExposeTester    from '@/components/DefineExposeTester.vue';
 
 const defineExposeRef = ref(null)
 
+const valueFromChild = ref()
+
 const getThatValueFromChild = ()=>{
     const textFieldValue = defineExposeRef.value.firstName
+    valueFromChild.value = textFieldValue
     console.log(textFieldValue)
 }
 
@@ -27,7 +30,7 @@ const getThatValueFromChild = ()=>{
             </v-btn> 
           </v-row>
           <v-row class="mt-5">
-            <span>Valeur du champ text enfant: </span>
+            <span>Valeur du champ text enfant: {{ valueFromChild }}</span>
           </v-row>
     </v-container>
 
