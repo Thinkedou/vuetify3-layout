@@ -13,6 +13,17 @@ const routes = [
     ],
   },
   {
+    path: '/public',
+    component: () => import('@/layouts/DashboardLayout.vue'),
+    children: [
+      {
+        path: 'expose', // donc là nous sommes bien sur :3000/public/expose
+        name: 'expose',
+        component: () => import('@/views/DefineExpose.vue'),
+      },
+    ],
+  },
+  {
     path: '/admin',
     component: () => import('@/layouts/DashboardLayout.vue'),
     children: [
